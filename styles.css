@@ -31,7 +31,7 @@ document flow and just place them exactly where I want them (for many elements, 
 /* Keyframes for rotating the parent container (and all children inside it) */
 @keyframes rotate {
     from {
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -70%) rotate(0deg);
     }
     to {
         transform: translate(-50%, -50%) rotate(360deg);
