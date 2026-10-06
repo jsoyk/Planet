@@ -23,18 +23,33 @@ document flow and just place them exactly where I want them (for many elements, 
     width:fit-content;
     top:50%;
     left:50%;
-    transform: translate(-50%, -50%);
-    animation: rotate 10s linear infinite; /* slow rotation of the parent container */
+    transform: translate(-50%, -50%) scale(1);
+    animation: rotate 5s infinite; /* slow rotation of the parent container */
 }
 
 
 /* Keyframes for rotating the parent container (and all children inside it) */
-@keyframes rotate {
-    from {
-        transform: translate(-50%, -50%) rotate(0deg);
+/* @keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
     }
-    to {
-        transform: translate(-50%, -50%) rotate(360deg);
+    50% {
+        transform: translate(-50%, -50%) rotate(180deg) scale(1.5);
+    }
+    75% {
+        transform: translate(-50%, -50%) rotate(198deg) scale(1.25);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) scale(1);
+    }
+} */
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) scale(1);
     }
 }
 
